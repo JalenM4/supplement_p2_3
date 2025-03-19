@@ -37,6 +37,19 @@ struct Point3D {
     z: f64,
 }
 
+use std::ops::Add;
+impl Add for Point3D {
+    type Output = Self;
+
+    fn add(self, other: Self) -> Self::Output {
+        Self {
+            x: self.x + other.x,
+            y: self.y + other.y,
+            z: self.z + other.z,
+        }
+    }
+}
+
 //fn swap<T>(a: T, b: T) -> (T, T) {
 //    todo!("not implemented")
 //}
