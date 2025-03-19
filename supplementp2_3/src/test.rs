@@ -35,4 +35,10 @@ mod tests {
         assert_eq!(y, 10);
     }
 
+    #[test]
+    fn test_max() {
+        assert_eq!(max(15, 25), 25);
+        assert_eq!(max(3.5, 2.5), 3.5);
+    }
+
 }
