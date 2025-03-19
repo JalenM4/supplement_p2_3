@@ -65,21 +65,23 @@ impl Add for Point3D {
 }
 
 /// # Description
-/// 
+/// Generic function to swap two variables of the same type
 /// # Parameters
-/// 
+/// a - A generic type variable T
+/// b - Another generic type variable T
 /// # Returns
-/// 
+/// Returns a tuple (T, T), where the order of a and b is swapped.
 fn swap<T>(a: T, b: T) -> (T, T) {
     (b, a)
 }
 
 /// # Description
-/// 
+/// Generic function to return the larger of two variables of the same type
 /// # Parameters
-/// 
+/// a - A generic type variable that implements PartialOrd (can be compared).
+/// b - Another variable of the same type T
 /// # Returns
-/// 
+/// Returns the larger of the two variables
 fn max<T: PartialOrd>(a: T, b: T) -> T {
     if a > b { a } else { b }
 }
