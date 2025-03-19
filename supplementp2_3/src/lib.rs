@@ -50,9 +50,9 @@ impl Add for Point3D {
     }
 }
 
-//fn swap<T>(a: T, b: T) -> (T, T) {
-//    todo!("not implemented")
-//}
+fn swap<T>(a: T, b: T) -> (T, T) {
+    (b, a)
+}
 
 //fn max<T: PartialOrd>(a: T, b: T) -> T {
     //todo!("not implemented")
