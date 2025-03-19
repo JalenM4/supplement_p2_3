@@ -31,12 +31,26 @@ fn add_mixed(stack_num: i32, heap_num: Box<i32>) -> i32 {
     stack_num + *heap_num
 }
 
+/// # Description
+/// Defines a Point3D struct with x, y, and z as f64 values
+/// # Parameters
+/// x - x coordinate
+/// y - y coordinate 
+/// z - z coordinate
+/// it stores three f64 values representing a point in 3D space.
 struct Point3D {
     x: f64,
     y: f64,
     z: f64,
 }
 
+/// # Description
+/// Implement addition for Point3D
+/// # Parameters
+/// self - The first Point3D object.
+/// other - The second Point3D object.
+/// # Returns
+/// Returns a new Point3D instance where each coordinate
 use std::ops::Add;
 impl Add for Point3D {
     type Output = Self;
@@ -50,10 +64,22 @@ impl Add for Point3D {
     }
 }
 
+/// # Description
+/// 
+/// # Parameters
+/// 
+/// # Returns
+/// 
 fn swap<T>(a: T, b: T) -> (T, T) {
     (b, a)
 }
 
+/// # Description
+/// 
+/// # Parameters
+/// 
+/// # Returns
+/// 
 fn max<T: PartialOrd>(a: T, b: T) -> T {
     if a > b { a } else { b }
 }
