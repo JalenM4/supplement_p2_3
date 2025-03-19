@@ -9,4 +9,12 @@ fn add_stack(a: i32,b: i32) -> i32 {
     a + b
 }
 
+fn add_heap(a: Box<i32>, b: Box<i32>) -> i32 {
+    todo!("not implemented!")
+}
+
+fn add_mixed(stack_num: i32, heap_num: Box<i32>) -> i32 {
+    todo!("not implemented")
+}
+
 mod test;
