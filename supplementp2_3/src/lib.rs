@@ -54,8 +54,8 @@ fn swap<T>(a: T, b: T) -> (T, T) {
     (b, a)
 }
 
-//fn max<T: PartialOrd>(a: T, b: T) -> T {
-    //todo!("not implemented")
-//}
+fn max<T: PartialOrd>(a: T, b: T) -> T {
+    if a > b { a } else { b }
+}
 
 mod test;
