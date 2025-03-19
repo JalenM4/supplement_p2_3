@@ -31,4 +31,16 @@ fn add_mixed(stack_num: i32, heap_num: Box<i32>) -> i32 {
     stack_num + *heap_num
 }
 
+struct Point3D {
+    todo!("not implemented")
+}
+
+fn swap<T>(a: T, b: T) -> (T, T) {
+    todo!("not implemented")
+}
+
+fn max<T: PartialOrd>(a: T, b: T) -> T {
+    todo!("not implemented")
+}
+
 mod test;
