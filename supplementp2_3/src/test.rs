@@ -28,4 +28,11 @@ mod tests {
         assert_eq!(result.z, 9.0);
     }
 
+    #[test]
+    fn test_swap() {
+        let (x, y) = swap(10, 20);
+        assert_eq!(x, 20);
+        assert_eq!(y, 10);
+    }
+
 }
