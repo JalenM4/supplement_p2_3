@@ -5,7 +5,7 @@
 /// b - 32-bit integer stored on the stack.
 /// # Returns
 /// returns the sum of two allocated integers
-fn add_stack(a: i32,b: i32) -> i32 {
+pub fn add_stack(a: i32,b: i32) -> i32 {
     a + b
 }
 
@@ -16,7 +16,7 @@ fn add_stack(a: i32,b: i32) -> i32 {
 /// b - 32 bit integer stored in the heap
 /// # Returns
 /// returnd the sum of the added heap
-fn add_heap(a: Box<i32>, b: Box<i32>) -> i32 {
+pub fn add_heap(a: Box<i32>, b: Box<i32>) -> i32 {
     *a + *b
 }
 
@@ -27,7 +27,7 @@ fn add_heap(a: Box<i32>, b: Box<i32>) -> i32 {
 /// heap_num - a heap allocated integer
 /// # Returns 
 /// returns a single integer, which is the sum of the stack-allocated number and the dereferenced heap-allocated number
-fn add_mixed(stack_num: i32, heap_num: Box<i32>) -> i32 {
+pub fn add_mixed(stack_num: i32, heap_num: Box<i32>) -> i32 {
     stack_num + *heap_num
 }
 
@@ -38,7 +38,7 @@ fn add_mixed(stack_num: i32, heap_num: Box<i32>) -> i32 {
 /// y - y coordinate 
 /// z - z coordinate
 /// it stores three f64 values representing a point in 3D space.
-struct Point3D {
+pub struct Point3D {
     x: f64,
     y: f64,
     z: f64,
@@ -71,7 +71,7 @@ impl Add for Point3D {
 /// b - Another generic type variable T
 /// # Returns
 /// Returns a tuple (T, T), where the order of a and b is swapped.
-fn swap<T>(a: T, b: T) -> (T, T) {
+pub fn swap<T>(a: T, b: T) -> (T, T) {
     (b, a)
 }
 
@@ -82,7 +82,7 @@ fn swap<T>(a: T, b: T) -> (T, T) {
 /// b - Another variable of the same type T
 /// # Returns
 /// Returns the larger of the two variables
-fn max<T: PartialOrd>(a: T, b: T) -> T {
+pub fn max<T: PartialOrd>(a: T, b: T) -> T {
     if a > b { a } else { b }
 }
 

@@ -1,7 +1,12 @@
 #[cfg(test)]
 
 mod tests {
-    use super::*;
+    use crate::add_stack;
+    use crate::add_heap;
+    use crate::add_mixed;
+    use crate::Point3D;
+    use crate::swap;
+    use crate::max;
 
     #[test]
     fn test_add_stack() {
